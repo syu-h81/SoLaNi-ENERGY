@@ -1678,6 +1678,127 @@ img {
   font-family: "Yu Gothic Medium", "Yu Gothic", "YuGothic", sans-serif;
 }
 
+.p-contact {
+  padding: 80px 160px;
+  padding-top: 160px;
+  background-color: #E6F0F8;
+}
+@media screen and (max-width: 768px) {
+  .p-contact {
+    padding: 48px 24px;
+  }
+}
+.p-contact__inner {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+@media screen and (max-width: 768px) {
+  .p-contact__inner {
+    display: grid;
+  }
+}
+.p-contact__body__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+}
+.p-contact__body__subTitle {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1.92px;
+  margin-top: 16px;
+}
+.p-contact__body__text {
+  margin-top: 48px;
+}
+.p-contact__border {
+  width: 1px;
+  align-self: stretch;
+  background-color: #CFCFCF;
+}
+@media screen and (max-width: 768px) {
+  .p-contact__border {
+    width: 100%;
+    height: 1px;
+  }
+}
+.p-contact__form__item {
+  padding-top: 32px;
+}
+.p-contact__form__item:first-child {
+  padding-top: 0;
+}
+.p-contact__form__item__input {
+  border-radius: 4px;
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+  background: #FAFAFA;
+  display: flex;
+  font-size: 12px;
+  margin-top: 8px;
+  width: 430px;
+  height: 34px;
+}
+@media screen and (max-width: 768px) {
+  .p-contact__form__item__input {
+    width: 100%;
+  }
+}
+.p-contact__form__item__input input {
+  width: 100%;
+  padding: 0 16px;
+}
+.p-contact__form__item__select {
+  position: relative;
+  /* ▼アイコンを擬似要素で作成 */
+}
+.p-contact__form__item__select select {
+  width: 100%;
+  padding: 0 16px;
+}
+.p-contact__form__item__select::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 120px;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: translateY(-50%) rotate(45deg); /* 45度回転で ▼ を表現 */
+  pointer-events: none; /* クリックを邪魔しない */
+}
+.p-contact__form__item__textarea {
+  height: 80px;
+}
+.p-contact__form__item__textarea textarea {
+  width: 100%;
+  padding: 0 8px;
+}
+.p-contact__form__submitBtn {
+  width: 100%;
+  border-radius: 100px;
+  background: var(--Foreground-Gradient-PrimaryBrand2, linear-gradient(271deg, var(--Primary-900, #023652) 0.81%, var(--Primary-700, #024C79) 99.05%));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  margin-top: 32px;
+}
+.p-contact__policy {
+  margin-top: 32px;
+}
+.p-contact__policy a {
+  text-decoration: underline;
+}
+
 .u-sp-only {
   display: none;
 }
