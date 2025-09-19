@@ -1,0 +1,134 @@
+@use "../../global" as g;
+
+.p-voice {
+  &-hero {
+    background-image: url(../images/voice-hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0; /* top, right, bottom, left: 0 の省略 */
+      background: rgba(0, 0, 0, 0.5); /* 黒50% */
+    }
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 830px;
+      padding: 96px 120px;
+      @include g.mq(md) {
+        padding: 0 24px;
+      }
+    }
+    &__body {
+      position: relative;
+      &__heading {
+        @include g.mq(md) {
+          text-align: center;
+        }
+        img {
+          width: 36px;
+        }
+        &__heading {
+          color: var(--Foreground-Inverse, var(--GrayScale-0, #FFF));
+          font-family: "Kannada MN", serif;
+          font-size: 120px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          @include g.mq(md) {
+            font-size: 48px;
+          }
+        }
+      }
+      &__border {
+        width: 100%;
+        height: 3px;
+        background-color: #FFF;
+        margin: 48px 0;
+      }
+      &__desc {
+        text-align: center;
+        &__heading {
+          color: var(--Foreground-Inverse, var(--GrayScale-0, #FFF));
+          font-family: "Noto Serif JP", serif;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 72px */
+          letter-spacing: 0.96px;
+          @include g.mq(md) {
+            font-size: 24px;
+          }
+        }
+        &__text {
+          margin-top: 24px;
+          line-height: 150%;
+          @include g.mq(md) {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  /* ============================================
+   opinion Section
+   ============================================ */
+   &-opinion {
+      padding: 80px 0;
+      background-color: #fafafa;
+      @include g.mq(md) {
+        padding: 80px 24px;
+      }
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 40px;
+      row-gap: 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+      @include g.mq(md) {
+        display: grid;
+        row-gap: 8px;
+      }
+    }
+    &-card {
+      width: 333px;
+      padding: 33px;
+      background: #FFF;
+      box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+      color: #02629F;
+      text-align: center;
+      &__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0.48px;
+      }
+      &__supplyment {
+        color: var(--Primary-500, #02629F);
+        text-align: center;
+        font-family: "Yu Gothic Medium", "Yu Gothic", "YuGothic", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+      &__img {
+        padding-top: 24px;
+      }
+      &__text {
+        margin-top: 18px;
+        font-weight: 500;
+        line-height: 150%;
+        font-family: "Yu Gothic Medium", "Yu Gothic", "YuGothic", sans-serif;
+      }
+    }
+  }
+}
