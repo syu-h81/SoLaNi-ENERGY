@@ -1,0 +1,260 @@
+@use "../global" as g;
+
+/* ============================================
+   Footer
+   ============================================ */
+.l-footer {
+  background: #023652;
+  padding: 48px;
+  @include g.mq(md) {
+    padding: 48px 24px;
+  }
+
+  &__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+  }
+
+  &__logo {
+    font-family: "Kannada MN", "Helvetica", sans-serif;
+    font-size: 150.75px;
+    font-weight: 400;
+    line-height: 1.33;
+    color: #024c79;
+    margin-bottom: 48px;
+    text-align: center;
+    @include g.mq(md) {
+      display: none;
+    }
+    &.l-footer__nav__logo {
+      // フッター内下部のロゴ（必要なら調整）
+      color: #fff;
+      font-size: 105.75px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 48px;
+    @include g.mq(md) {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
+  /* ===== NAV ===== */
+  &__nav {
+    flex: 1;
+    @include g.mq(md) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &--flex {
+      display: flex;
+      gap: 90px;
+      align-items: flex-start;
+      @include g.mq(md) {
+        display: block;
+      }
+    }
+    &__section {
+      @include g.mq(md) {
+        margin-top: 24px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__title {
+      font-family: "Kannada MN", "Helvetica", sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.2;
+      color: #fff;
+      margin: 0 0 8px 0;
+    }
+
+    &__subtitle {
+      font-family: "Noto Sans CJK JP", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #fff;
+      margin: 0 0 16px 0;
+      letter-spacing: 0.12px;
+    }
+    &__logo {
+      text-align: justify;
+      margin-top: 24px;
+      @include g.mq(md) {
+        display: block;
+        font-size: 41px!important;
+        margin: 0;
+        margin-bottom: 24px!important;
+      }
+    }
+  }
+
+  &__links {
+    margin-bottom: 48px;
+    @include g.mq(md) {
+      margin: 24px 0;
+    }
+
+    a {
+      font-family: "Noto Sans CJK JP", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #fff;
+      letter-spacing: 0.16px;
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__divider {
+    width: 1px;
+    height: 372px;
+    background: rgba(159, 191, 255, 0.20);
+    @include g.mq(md) {
+      position: absolute;
+      top: 80px;
+      left: 40%;
+    }
+  }
+
+  /* ===== CONTACT ===== */
+  &__contact {
+    background: #024c79;
+    border-radius: 24px;
+    padding: 48px;
+    flex: 1;
+    max-width: 558px;
+    @include g.mq(md) {
+      padding: 24px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      @include g.mq(md) {
+        margin-top: 18px;
+      }
+    }
+
+    &-title {
+      font-family: "Kannada MN", "Helvetica", sans-serif;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1.2;
+      color: #fff;
+      margin: 0;
+      @include g.mq(md) {
+        font-size: 32px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    &__icon {
+      width: 61px;
+      height: 60px;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &-icon-small {
+      width: 28px;
+      height: 28px;
+    }
+
+    &__text {
+      font-family: "Noto Sans CJK JP", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.55;
+      color: #fff;
+    }
+  }
+
+  /* ===== TOPボタン（フッター内右側）===== */
+  .back-to-top {
+    position: absolute;
+    top: 257px;
+    right: 0;
+    width: 61px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid #eaeaea;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    @include g.mq(md) {
+      top: 0;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    &-text {
+      font-family: "Noto Sans CJK JP", sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.33;
+      color: #fff;
+    }
+
+    /* 矢印（線で描画するタイプならここで） */
+    &-arrow {
+      position: relative;
+      width: 20px;
+      height: 20px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 2px;
+        height: 18px;
+        background: #fff;
+        transform-origin: top center;
+      }
+      &::before {
+        left: 8px;
+        transform: rotate(-45deg);
+      }
+      &::after {
+        right: 8px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

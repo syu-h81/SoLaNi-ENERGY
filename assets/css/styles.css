@@ -1,0 +1,1206 @@
+@charset "UTF-8";
+/*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+  min-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.wrapper {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 24px 0;
+  transition: all 0.3s ease;
+  /* 閉じている（ハンバーガー）状態：上下にずらすだけ */
+  /* 開いた（×）状態：中央でクロスさせる */
+}
+@media screen and (max-width: 768px) {
+  .l-header {
+    padding: 0;
+  }
+}
+.l-header.scrolled {
+  background-color: #000;
+}
+.l-header.scrolled .l-header__menu__bar {
+  background: #fff;
+}
+.l-header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-header__logo {
+  font-family: "Kannada MN", "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.2;
+}
+.l-header__list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .l-header__list {
+    display: none;
+  }
+}
+.l-header__item a {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+}
+.l-header__menu {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .l-header__menu {
+    display: block;
+  }
+}
+.l-header__menu__bar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 28px;
+  height: 1px;
+  background: #000;
+  border-radius: 1px;
+  transform-origin: center;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.l-header__menu__bar:nth-child(1) {
+  width: 46px;
+  transform: translate(-50%, -8px);
+}
+.l-header__menu__bar:nth-child(2) {
+  width: 39px;
+  transform: translate(-40%, -50%);
+}
+.l-header__menu__bar:nth-child(3) {
+  width: 32px;
+  transform: translate(-25%, 8px);
+}
+.l-header.is-open .l-header__menu__bar:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 32px;
+}
+.l-header.is-open .l-header__menu__bar:nth-child(2) {
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.l-header.is-open .l-header__menu__bar:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 32px;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.l-footer {
+  background: #023652;
+  padding: 48px;
+  /* ===== NAV ===== */
+  /* ===== CONTACT ===== */
+  /* ===== TOPボタン（フッター内右側）===== */
+}
+@media screen and (max-width: 768px) {
+  .l-footer {
+    padding: 48px 24px;
+  }
+}
+.l-footer__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+}
+.l-footer__logo {
+  font-family: "Kannada MN", "Helvetica", sans-serif;
+  font-size: 150.75px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: #024c79;
+  margin-bottom: 48px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__logo {
+    display: none;
+  }
+}
+.l-footer__logo.l-footer__nav__logo {
+  color: #fff;
+  font-size: 105.75px;
+  margin-bottom: 48px;
+}
+.l-footer__main {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__main {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+.l-footer__nav {
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.l-footer__nav--flex {
+  display: flex;
+  gap: 90px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__nav--flex {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-footer__nav__section {
+    margin-top: 24px;
+  }
+  .l-footer__nav__section:first-child {
+    margin-top: 0;
+  }
+}
+.l-footer__nav__title {
+  font-family: "Kannada MN", "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+.l-footer__nav__subtitle {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.12px;
+}
+.l-footer__nav__logo {
+  text-align: justify;
+  margin-top: 24px;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__nav__logo {
+    display: block;
+    font-size: 41px !important;
+    margin: 0;
+    margin-bottom: 24px !important;
+  }
+}
+.l-footer__links {
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__links {
+    margin: 24px 0;
+  }
+}
+.l-footer__links a {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #fff;
+  letter-spacing: 0.16px;
+  text-decoration: none;
+  display: block;
+}
+.l-footer__links a:hover {
+  opacity: 0.8;
+}
+.l-footer__divider {
+  width: 1px;
+  height: 372px;
+  background: rgba(159, 191, 255, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .l-footer__divider {
+    position: absolute;
+    top: 80px;
+    left: 40%;
+  }
+}
+.l-footer__contact {
+  background: #024c79;
+  border-radius: 24px;
+  padding: 48px;
+  flex: 1;
+  max-width: 558px;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__contact {
+    padding: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.l-footer__contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__contact-header {
+    margin-top: 18px;
+  }
+}
+.l-footer__contact-title {
+  font-family: "Kannada MN", "Helvetica", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__contact-title {
+    font-size: 32px;
+  }
+}
+.l-footer__contact-title span {
+  display: block;
+}
+.l-footer__contact__icon {
+  width: 61px;
+  height: 60px;
+}
+.l-footer__contact__info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.l-footer__contact-icon-small {
+  width: 28px;
+  height: 28px;
+}
+.l-footer__contact__text {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #fff;
+}
+.l-footer .back-to-top {
+  position: absolute;
+  top: 257px;
+  right: 0;
+  width: 61px;
+  height: 60px;
+  background: transparent;
+  border: 1px solid #eaeaea;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* 矢印（線で描画するタイプならここで） */
+}
+@media screen and (max-width: 768px) {
+  .l-footer .back-to-top {
+    top: 0;
+  }
+}
+.l-footer .back-to-top:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.l-footer .back-to-top-text {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #fff;
+}
+.l-footer .back-to-top-arrow {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.l-footer .back-to-top-arrow::before, .l-footer .back-to-top-arrow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 18px;
+  background: #fff;
+  transform-origin: top center;
+}
+.l-footer .back-to-top-arrow::before {
+  left: 8px;
+  transform: rotate(-45deg);
+}
+.l-footer .back-to-top-arrow::after {
+  right: 8px;
+  transform: rotate(45deg);
+}
+
+.l-inner {
+  margin: 0 auto;
+}
+
+.c-heading-header {
+  text-align: center;
+}
+
+.c-heading-title-en {
+  font-family: "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #02629f;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.64px;
+}
+
+.c-heading-icon {
+  margin: 0 auto 16px;
+  width: 28px;
+  height: 28px;
+}
+
+.c-heading-title-jp {
+  font-family: "Noto Serif JP", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333333;
+  margin: 0;
+  letter-spacing: 1.12px;
+}
+@media screen and (max-width: 768px) {
+  .c-heading-title-jp {
+    font-size: 32px;
+    font-style: normal;
+    letter-spacing: 0.64px;
+  }
+}
+
+.c-btn-contact {
+  display: inline-block;
+  border-radius: 100px;
+  background: var(--Foreground-Gradient-PrimaryBrand2, linear-gradient(271deg, var(--Primary-900, #023652) 0.81%, var(--Primary-700, #024C79) 99.05%));
+  padding: 12px 24px;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  transition: all 0.3s ease;
+}
+
+.c-contact-banner {
+  background: #ededed;
+  padding: 120px 98px;
+}
+@media screen and (max-width: 768px) {
+  .c-contact-banner {
+    padding: 48px 24px;
+  }
+}
+.c-contact-banner-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 24px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+@media screen and (max-width: 768px) {
+  .c-contact-banner-content {
+    display: block;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+.c-contact-banner-content > * {
+  min-width: 0;
+}
+.c-contact-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 768px) {
+  .c-contact-banner-header {
+    margin-bottom: 16px;
+  }
+}
+.c-contact-banner-icon {
+  width: 28px;
+  height: 28px;
+}
+.c-contact-banner-icon img {
+  width: 100%;
+  height: auto;
+}
+.c-contact-banner-title {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #0a0f30;
+  margin: 0;
+}
+.c-contact-banner-main-title {
+  font-family: "Kannada MN", "Helvetica", sans-serif;
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #0a0f30;
+  margin: 0 0 48px 0;
+}
+@media screen and (max-width: 768px) {
+  .c-contact-banner-main-title {
+    font-size: 48px;
+    text-align: justify;
+    margin-bottom: 16px;
+  }
+}
+.c-contact-banner-main-title span {
+  display: block;
+}
+.c-contact-banner-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c-contact-banner-btn.c-contact-banner-pc-only {
+  display: inline;
+}
+@media screen and (max-width: 768px) {
+  .c-contact-banner-btn.c-contact-banner-pc-only {
+    display: none;
+  }
+}
+.c-contact-banner-btn.c-contact-banner-sp-only {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .c-contact-banner-btn.c-contact-banner-sp-only {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 16px;
+    text-align: center;
+  }
+}
+
+.p-about {
+  /* ============================================
+   Quality Section
+   ============================================ */
+  /* ============================================
+   Company Section
+   ============================================ */
+  /* ============================================
+  Company Section
+  ============================================ */
+}
+.p-about-hero {
+  background-image: url(../images/about-hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.p-about-hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 830px;
+  padding: 96px 120px;
+}
+@media screen and (max-width: 768px) {
+  .p-about-hero__inner {
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-about-hero__body__heading {
+    text-align: center;
+  }
+}
+.p-about-hero__body__heading img {
+  width: 36px;
+}
+.p-about-hero__body__heading__heading {
+  color: var(--Foreground-Inverse, var(--GrayScale-0, #FFF));
+  font-family: "Kannada MN", serif;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+@media screen and (max-width: 768px) {
+  .p-about-hero__body__heading__heading {
+    font-size: 48px;
+  }
+}
+.p-about-hero__body__border {
+  width: 100%;
+  height: 3px;
+  background-color: #FFF;
+  margin: 48px 0;
+}
+.p-about-hero__body__desc {
+  text-align: center;
+}
+.p-about-hero__body__desc__heading {
+  color: var(--Foreground-Inverse, var(--GrayScale-0, #FFF));
+  font-family: "Noto Serif JP", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 72px */
+  letter-spacing: 0.96px;
+}
+@media screen and (max-width: 768px) {
+  .p-about-hero__body__desc__heading {
+    font-size: 24px;
+  }
+}
+.p-about-hero__body__desc__text {
+  margin-top: 24px;
+  line-height: 150%;
+}
+@media screen and (max-width: 768px) {
+  .p-about-hero__body__desc__text {
+    font-weight: 300;
+  }
+}
+.p-about-quality {
+  padding: 80px 0;
+  background-image: url(../images/about-quality-bg.png);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .p-about-quality {
+    padding: 80px 24px;
+  }
+}
+.p-about-quality__qualitys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 64px;
+}
+@media screen and (max-width: 768px) {
+  .p-about-quality__qualitys {
+    flex-direction: column;
+  }
+}
+.p-about-quality__quality {
+  background-color: #FAFAFA;
+  border-radius: 24px;
+  padding: 16px;
+}
+@media screen and (max-width: 768px) {
+  .p-about-quality__quality {
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+.p-about-quality__quality__sp__number {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .p-about-quality__quality__sp__number {
+    color: #02629F;
+    display: block;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+.p-about-quality__quality__body {
+  padding-top: 24px;
+}
+@media screen and (max-width: 768px) {
+  .p-about-quality__quality__body {
+    text-align: center;
+  }
+}
+.p-about-quality__quality__body__number {
+  color: var(--Primary-500, #02629F);
+  font-family: "Yu Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+@media screen and (max-width: 768px) {
+  .p-about-quality__quality__body__number {
+    display: none;
+  }
+}
+.p-about-quality__quality__body__title {
+  color: var(--Primary-500, #02629F);
+  font-family: "Noto Sans CJK JP";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+}
+@media screen and (max-width: 768px) {
+  .p-about-quality__quality__body__title {
+    font-size: 24px;
+  }
+}
+.p-about-company {
+  padding: 80px 0;
+  background-color: #FAFAFA;
+}
+@media screen and (max-width: 768px) {
+  .p-about-company {
+    padding: 80px 24px;
+  }
+}
+.p-about-company__list {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+.p-about-company__item {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+  border-bottom: 1px solid gray;
+  color: var(--Foreground-Primary, var(--Gray-Scale-800, #3D3D3D));
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media screen and (max-width: 768px) {
+  .p-about-company__item {
+    justify-content: space-between;
+  }
+}
+.p-about-company__item__title {
+  width: 233px;
+}
+@media screen and (max-width: 768px) {
+  .p-about-company__item__title {
+    width: 155px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-about-company__item__name__sp {
+    width: 45%;
+  }
+}
+.p-about-philosophy {
+  background-image: url(../images/about-philosophy.png);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .p-about-philosophy {
+    background-position: right;
+  }
+}
+.p-about-philosophy__inner {
+  height: 920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .p-about-philosophy__inner {
+    height: auto;
+    padding: 120px 35px;
+  }
+}
+.p-about-philosophy__content {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.p-about-philosophy__heading {
+  color: #fff;
+}
+.p-about-philosophy__heading h2 {
+  color: var(--Foreground-Inverse, var(--GrayScale-0, #FFF));
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 57.6px */
+  font-family: "Kannada MN", serif;
+}
+@media screen and (max-width: 768px) {
+  .p-about-philosophy__heading h2 {
+    font-size: 15px;
+  }
+}
+.p-about-philosophy__heading__title__jp {
+  color: #FFF;
+}
+@media screen and (max-width: 768px) {
+  .p-about-philosophy__heading__title__jp {
+    font-size: 24px;
+  }
+}
+.p-about-philosophy__heading__text {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 24px;
+}
+@media screen and (max-width: 768px) {
+  .p-about-philosophy__heading__text {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.u-sp-only {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .u-sp-only {
+    display: block;
+  }
+}
+
+.u-pc-only {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .u-pc-only {
+    display: none;
+  }
+}

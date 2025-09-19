@@ -1,0 +1,1216 @@
+/*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+  min-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  font-family: "Noto Sans CJK JP", "Helvetica", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.6;
+  color: #252525;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   Main Content
+   ============================================ */
+.l-main {
+  flex: 1;
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+.hero {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-bg {
+  width: 100%;
+  height: auto; /* アスペクト比を保持 */
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  max-width: 1040px;
+}
+
+.hero-title {
+  font-family: "Helvetica", sans-serif;
+  font-size: 69.316px;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0 0 24px 0;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.hero-subtitle {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0 0 24px 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  border-radius: 100px;
+  background: var(--Foreground-Gradient-PrimaryBrand2, linear-gradient(271deg, var(--Primary-900, #023652) 0.81%, var(--Primary-700, #024C79) 99.05%));
+  padding: 12px 24px;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: white;
+  color: #0a0f30;
+}
+
+/* ============================================
+   Mission Section
+   ============================================ */
+.mission {
+  height: 970px;
+  background-image: url("../images/mission-bg.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 120px;
+}
+
+.mission-content {
+  text-align: center;
+  max-width: 809px;
+}
+
+.mission-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #252525;
+  margin: 0 0 48px 0;
+  letter-spacing: 0.96px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #02629f, #3387c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 56px;
+  letter-spacing: 1.12px;
+}
+
+.mission-description {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #252525;
+  margin: 0 0 48px 0;
+  letter-spacing: 0.24px;
+}
+
+.mission-features {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 16px 24px;
+  text-align: center;
+  flex: 1;
+  min-width: 308px;
+}
+
+.feature-subtitle {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #02629f;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.16px;
+}
+
+.feature-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #02629f;
+  margin: 0;
+  letter-spacing: 0.64px;
+}
+
+/* ============================================
+   Service Section
+   ============================================ */
+.service {
+  background: #fafafa;
+  padding: 96px 0;
+}
+
+.service-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 96px;
+}
+
+.section-title-en {
+  font-family: "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #02629f;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.64px;
+}
+
+.section-icon {
+  margin: 0 auto 16px;
+  width: 28px;
+  height: 28px;
+}
+
+.section-title-jp {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #333333;
+  margin: 0;
+  letter-spacing: 1.12px;
+}
+
+.service-image {
+  margin-bottom: 96px;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 344px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-description {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #191919;
+  margin: 0;
+  letter-spacing: 0.24px;
+  max-width: 716px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   Reason Section
+   ============================================ */
+.reason {
+  background: white;
+  padding: 80px 0;
+}
+
+.reason-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 198px;
+}
+
+.reason-section-header {
+  text-align: center;
+}
+
+.reason-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.reason-card {
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.reason-card.reverse {
+  flex-direction: row;
+}
+
+.reason-image {
+  flex: 1;
+}
+
+.reason-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reason-text {
+  flex: 1;
+  padding-left: 48px;
+  text-align: left;
+}
+
+.reason-text-reverse {
+  padding-left: 0;
+}
+
+.reason-number {
+  font-family: "Yu Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #02629f;
+  margin: 0 0 16px 0;
+}
+
+.reason-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #02629f;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.64px;
+}
+
+.reason-description {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  margin: 0;
+  letter-spacing: 0.16px;
+}
+
+/* ============================================
+   CTA Section
+   ============================================ */
+.cta {
+  position: relative;
+}
+
+.cta-bg img {
+  width: 100%;
+  height: auto; /* アスペクト比を保持 */
+  display: block;
+}
+
+.cta-content {
+  max-width: 1040px;
+  color: white;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.cta-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 69.316px;
+  line-height: normal;
+  margin: 0 0 48px 0;
+}
+
+.cta-description {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* ============================================
+   Contact Section
+   ============================================ */
+.contact {
+  background: #ededed;
+  /* セクション全体の上下余白はここでOK。左右は container に任せる */
+  padding: 120px 98px;
+}
+
+/* どのセクションでも使える共通コンテナにしておくと楽 */
+.contact-content {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  /* どの幅でも最低限の左右余白を維持（ガター） */
+  padding-inline: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  /* Flex 子のはみ出し防止（超重要） */
+  > * { min-width: 0; }
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-title {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #0a0f30;
+  margin: 0;
+}
+
+.contact-main-title {
+  font-family: "Kannada MN", "Helvetica", sans-serif;
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #0a0f30;
+  margin: 0 0 48px 0;
+}
+
+.contact-main-title span {
+  display: block;
+}
+
+.contact-images {
+  flex: 1;
+  position: relative;
+  height: 400px;
+}
+
+.contact-image {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-pc-only {
+  display: inline;
+}
+
+.contact-sp-only {
+  display: none;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 1024px) {
+  .header-content {
+    padding: 0 16px;
+  }
+  
+  .hero-content {
+    padding: 0 60px;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .mission {
+    padding: 60px 60px;
+  }
+  
+  .mission-title {
+    font-size: 36px;
+  }
+  
+  .gradient-text {
+    font-size: 42px;
+  }
+  
+  .mission-features {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-card {
+    min-width: 280px;
+  }
+  
+  .reason-content {
+    padding: 0 60px;
+  }
+  
+  .reason-card {
+    flex-direction: column;
+  }
+  
+  .reason-card.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .reason-image {
+    width: 100%;
+  }
+  
+  .reason-text {
+    text-align: center;
+  }
+  
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-main-title {
+    font-size: 80px;
+  }
+  
+  .footer-main {
+    flex-direction: column;
+    gap: 48px;
+  }
+  
+  .footer-divider {
+    width: 100%;
+    height: 1px;
+    transform: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .section-title-en {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .section-header {
+    margin-bottom: 48px;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .hero-bg {
+    height: 800px;
+  }
+  .hero-title {
+    font-size: 32px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .mission {
+    padding: 96px 24px;
+    height: auto;
+  }
+  
+  .mission-title {
+    font-size: 27px;
+  }
+  
+  .gradient-text {
+    font-size: 24px;
+  }
+  
+  .mission-description {
+    font-size: 18px;
+  }
+  
+  .section-title-jp {
+    font-size: 24px;
+  }
+
+  .service-content {
+    padding: 0;
+  }
+
+  .service-image {
+    margin-bottom: 48px;
+    border-radius: 0;
+  }
+  
+  .service-description {
+    font-size: 16px;
+    padding: 0 24px;
+  }
+
+  .mission-features {
+    gap: 24px;
+  }
+
+  .feature-card {
+    padding: 8px 16px;
+  }
+
+  .reason-content {
+    padding: 0 24px;
+  }
+
+  .reason-card {
+    overflow: visible;
+  }
+
+  .reason-card.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .reason-text {
+    padding-left: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .reason-number {
+    margin: 8px 0;
+  }
+  
+  .reason-title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .reason-description {
+    font-size: 12px;
+  }
+
+  .cta-bg img {
+    height: 500px;
+  }
+
+  .cta-content {
+    left: 0;
+    top: 0;
+    transform: none;
+    padding: 0 24px;
+    padding-top: 100px;
+  }
+  
+  .cta-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  
+  .cta-description {
+    font-size: 16px;
+    line-height: 170%;
+  }
+
+  .contact {
+    padding: 48px 24px;
+  }
+
+  .contact-content {
+    display: block;
+    padding: 0;
+  }
+
+  .contact-header {
+    margin-bottom: 16px;
+  }
+  
+  .contact-main-title {
+    font-size: 48px;
+    text-align: justify;
+    margin-bottom: 16px;
+  }
+
+  .contact-pc-only {
+    display: none;
+  }
+
+  .contact-sp-only {
+    display: block;
+    width: 50%;
+    margin-top: 16px;
+  }
+
+  
+  .footer-logo {
+    font-size: 100px;
+  }
+  
+  .footer-contact-title {
+    font-size: 36px;
+  }
+  
+  .footer-bottom-logo {
+    font-size: 80px;
+  }
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reason-card,
+.feature-card,
+.section-header {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.reason-card.animate-in,
+.feature-card.animate-in,
+.section-header.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reason-card:nth-child(odd) {
+  animation: fadeInLeft 0.6s ease forwards;
+}
+
+.reason-card:nth-child(even) {
+  animation: fadeInRight 0.6s ease forwards;
+}
+
+/* ============================================
+   Additional Styles
+   ============================================ */
+.btn-primary,
+.btn-contact {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before,
+.btn-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before,
+.btn-contact:hover::before {
+  left: 100%;
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img[src] {
+  opacity: 1;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #02629f;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .l-header,
+  .back-to-top {
+    display: none;
+  }
+  
+  .hero {
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .mission,
+  .service,
+  .reason,
+  .cta,
+  .contact {
+    page-break-inside: avoid;
+  }
+}

@@ -1,0 +1,56 @@
+<!--======== l-footer ========-->
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <div class="l-footer__logo">SoLaNi ENERGY</div>
+        <div class="l-footer__main">
+          <div class="l-footer__nav">
+            <div class="l-footer__nav--flex">
+              <div class="l-footer__nav__inner">
+                <div class="l-footer__nav__section">
+                  <h4 class="l-footer__nav__title">About us</h4>
+                  <p class="l-footer__nav__subtitle">SoLaNi ENERGYについて</p>
+                </div>
+                <div class="l-footer__nav__section">
+                  <h4 class="l-footer__nav__title">Service</h4>
+                  <p class="l-footer__nav__subtitle">サービス概要</p>
+                </div>
+                <div class="l-footer__nav__section">
+                  <h4 class="l-footer__nav__title">Support</h4>
+                  <p class="l-footer__nav__subtitle">お客様サポート</p>
+                </div>
+              </div>
+              <div class="l-footer__links">
+                <a href="#faq">よくある質問</a>
+                <a href="#privacy">プライバシーポリシー</a>
+                <a href="#terms">特定商取引法に基づく表記</a>
+              </div>
+            </div>
+            <div class="l-footer__logo l-footer__nav__logo">LOGO</div>
+          </div>
+          <div class="l-footer__divider"></div>
+          <div class="l-footer__contact">
+            <div class="l-footer__contact-header">
+              <h3 class="l-footer__contact-title">
+                <span>OUR</span>
+                <span>CONTACT</span>
+              </h3>
+              <div class="l-footer__contact__icon">
+                <svg width="61" height="60" viewBox="0 0 61 60" fill="none">
+                  <path d="M30.5 0L38.125 15L53.5 15L41.1875 24.25L48.8125 39.25L30.5 30L12.1875 39.25L19.8125 24.25L7.5 15L22.875 15L30.5 0Z" fill="#024c79"/>
+                </svg>
+              </div>
+            </div>
+            <div class="l-footer__contact__info">
+              <div class="l-footer__contact-icon-small">
+                <img src="assets/images/title-icon.png" alt="">
+              </div>
+              <span class="l-footer__contact__text">お問い合わせ</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="back-to-top">
+          <span class="back-to-top-arrow"></span>
+          <span class="back-to-top-text">TOP</span>
+        </a>
+      </div>
+    </footer>

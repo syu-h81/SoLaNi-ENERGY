@@ -1,0 +1,102 @@
+@use "../global" as g;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 24px 0;
+  transition: all 0.3s ease;
+  @include g.mq(md) {
+    padding: 0;
+  }
+  &.scrolled {
+    background-color: #000;
+    .l-header__menu__bar {
+      background: #fff;
+    }
+
+  }
+  &__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    font-family: "Kannada MN", "Helvetica", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.2;
+  }
+  &__list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include g.mq(md) {
+      display: none;
+    }
+  }
+  &__item {
+    a {
+      font-family: "Noto Sans CJK JP", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      line-height: 1.5;
+      letter-spacing: 0.16px;
+    }
+  }
+  &__menu {
+    position: relative;       // ← 中で絶対配置を使うため
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    display: inline-block;    // ← column+gap は使わない
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: none;
+    @include g.mq(md) {
+      display: block;
+    }
+  }
+
+  &__menu__bar {
+    position: absolute;       // ← 3本とも中央基準に重ねる
+    left: 50%;
+    top: 50%;
+    width: 28px;              // 3本とも同じ長さ
+    height: 1px;
+    background: #000;
+    border-radius: 1px;
+    transform-origin: center;
+    transition: transform .25s ease, opacity .2s ease;
+  }
+
+  /* 閉じている（ハンバーガー）状態：上下にずらすだけ */
+  &__menu__bar:nth-child(1) { width: 46px; transform: translate(-50%, calc(-2px - 6px)); }
+  &__menu__bar:nth-child(2) { width: 39px; transform: translate(-40%, -50%); }
+  &__menu__bar:nth-child(3) { width: 32px; transform: translate(-25%, calc(2px + 6px)); }
+  /* 開いた（×）状態：中央でクロスさせる */
+  &.is-open {
+    .l-header__menu__bar:nth-child(1) {
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 32px;
+    }
+    .l-header__menu__bar:nth-child(2) {
+      opacity: 0;
+      transform: translate(-50%, -50%); // 中央でフェードアウト
+    }
+    .l-header__menu__bar:nth-child(3) {
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 32px;
+    }
+  }
+}

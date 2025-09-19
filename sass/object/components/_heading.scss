@@ -1,0 +1,36 @@
+@use "../../global" as g;
+
+.c-heading-header {
+  text-align: center;
+}
+
+.c-heading-title-en {
+  font-family: "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #02629f;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.64px;
+}
+
+.c-heading-icon {
+  margin: 0 auto 16px;
+  width: 28px;
+  height: 28px;
+}
+
+.c-heading-title-jp {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333333;
+  margin: 0;
+  letter-spacing: 1.12px;
+  @include g.mq(md) {
+    font-size: 32px;
+    font-style: normal;
+    letter-spacing: 0.64px;
+  }
+}

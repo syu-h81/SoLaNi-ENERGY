@@ -1,0 +1,15 @@
+@use "../../global" as g;
+
+.c-btn-contact {
+  display: inline-block;
+  border-radius: 100px;
+  background: var(--Foreground-Gradient-PrimaryBrand2, linear-gradient(271deg, var(--Primary-900, #023652) 0.81%, var(--Primary-700, #024C79) 99.05%));
+  padding: 12px 24px;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  transition: all 0.3s ease;
+}
