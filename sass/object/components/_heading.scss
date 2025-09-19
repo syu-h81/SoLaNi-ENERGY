@@ -12,12 +12,18 @@
   color: #02629f;
   margin: 0 0 16px 0;
   letter-spacing: 0.64px;
+  @include g.mq(md) {
+    margin-bottom: 0;
+  }
 }
 
 .c-heading-icon {
   margin: 0 auto 16px;
   width: 28px;
   height: 28px;
+  @include g.mq(md) {
+    margin-bottom: 0;
+  }
 }
 
 .c-heading-title-jp {

@@ -782,11 +782,21 @@ img {
   margin: 0 0 16px 0;
   letter-spacing: 0.64px;
 }
+@media screen and (max-width: 768px) {
+  .c-heading-title-en {
+    margin-bottom: 0;
+  }
+}
 
 .c-heading-icon {
   margin: 0 auto 16px;
   width: 28px;
   height: 28px;
+}
+@media screen and (max-width: 768px) {
+  .c-heading-icon {
+    margin-bottom: 0;
+  }
 }
 
 .c-heading-title-jp {
@@ -886,7 +896,7 @@ img {
 @media screen and (max-width: 768px) {
   .c-contact-banner-main-title {
     font-size: 48px;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 16px;
   }
 }
@@ -1184,6 +1194,342 @@ img {
   .p-about-philosophy__heading__text {
     font-size: 16px;
     font-weight: 300;
+  }
+}
+
+.p-service {
+  /* ============================================
+   explain Section
+   ============================================ */
+  /* ============================================
+   Reason Section
+   ============================================ */
+  /* ============================================
+  Maker Section
+  ============================================ */
+  /* ============================================
+  Handling Section
+  ============================================ */
+}
+.p-service-hero {
+  background-image: url(../images/service-hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.p-service-hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 830px;
+  padding: 96px 120px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-hero__inner {
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-service-hero__body__heading {
+    text-align: center;
+  }
+}
+.p-service-hero__body__heading img {
+  width: 36px;
+}
+.p-service-hero__body__heading__heading {
+  color: var(--Foreground-Inverse, var(--GrayScale-0, #FFF));
+  font-family: "Kannada MN", serif;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+@media screen and (max-width: 768px) {
+  .p-service-hero__body__heading__heading {
+    font-size: 48px;
+  }
+}
+.p-service-hero__body__border {
+  width: 100%;
+  height: 3px;
+  background-color: #FFF;
+  margin: 48px 0;
+}
+.p-service-hero__body__desc {
+  text-align: center;
+}
+.p-service-hero__body__desc__heading {
+  color: var(--Foreground-Inverse, var(--GrayScale-0, #FFF));
+  font-family: "Noto Serif JP", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 72px */
+  letter-spacing: 0.96px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-hero__body__desc__heading {
+    font-size: 24px;
+  }
+}
+.p-service-hero__body__desc__text {
+  margin-top: 48px;
+  line-height: 150%;
+}
+@media screen and (max-width: 768px) {
+  .p-service-hero__body__desc__text {
+    font-weight: 300;
+  }
+}
+.p-service-explain {
+  padding: 96px 120px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-explain {
+    padding: 48px 24px;
+  }
+}
+.p-service-explain__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .p-service-explain__content {
+    display: grid;
+    justify-content: center;
+  }
+}
+.p-service-explain__content__body h2 {
+  color: var(--, #191919);
+  font-family: "Noto Serif JP", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 72px */
+  letter-spacing: 0.96px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-explain__content__body h2 {
+    font-size: 24px;
+  }
+}
+.p-service-explain__content__body p {
+  margin-top: 24px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-explain__content__img {
+    margin-top: 24px;
+  }
+}
+.p-service-reason {
+  padding: 80px 140px;
+  background-color: #fafafa;
+}
+@media screen and (max-width: 768px) {
+  .p-service-reason {
+    padding: 48px 24px;
+  }
+}
+.p-service-reason__heading {
+  max-width: 888px;
+  margin: 0 auto;
+  background-color: #0064B9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .p-service-reason__heading {
+    max-width: 300px;
+    height: 80px;
+  }
+}
+.p-service-reason__heading::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 20px solid transparent;
+  border-top: 20px solid #0064B9;
+}
+.p-service-reason__heading__icon {
+  position: absolute;
+}
+.p-service-reason__heading__icon__1 {
+  left: -25px;
+  bottom: -40px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-reason__heading__icon__1 {
+    width: 28px;
+    height: 79px;
+    left: -15px;
+    bottom: -40px;
+  }
+}
+.p-service-reason__heading__icon__2 {
+  top: -60px;
+  right: -100px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-reason__heading__icon__2 {
+    width: 56px;
+    height: 51px;
+    top: -10px;
+    right: -10px;
+  }
+}
+.p-service-reason__heading__title {
+  color: #fff;
+  font-size: 48px;
+  font-family: "Noto Serif JP", serif;
+}
+@media screen and (max-width: 768px) {
+  .p-service-reason__heading__title {
+    font-size: 24px;
+  }
+}
+.p-service-reason__cards {
+  padding-top: 60px;
+}
+.p-service-reason__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 24px;
+}
+.p-service-reason__card:first-child {
+  padding-top: 0;
+}
+.p-service-reason__card__body {
+  border-radius: 0 16px 16px 0;
+  background: #FFF;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+}
+.p-service-reason__card__body__number {
+  color: var(--Primary-500, #02629F);
+  font-family: "Yu Gothic Medium", "Yu Gothic", "YuGothic", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.p-service-reason__card__body__title {
+  color: var(--Primary-500, #02629F);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+}
+.p-service-reason__card__body__text {
+  margin-top: 16px;
+}
+.p-service-maker {
+  padding: 80px 120px;
+  background-color: #fafafa;
+}
+@media screen and (max-width: 768px) {
+  .p-service-maker {
+    padding: 80px 24px;
+  }
+}
+.p-service-maker__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 60px;
+  padding-top: 48px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-maker__cards {
+    grid-template-columns: auto;
+    row-gap: 24px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
+.p-service-maker__card {
+  padding: 24px;
+  background-color: #fff;
+  text-align: center;
+}
+.p-service-maker__card:last-child {
+  grid-column: 1/-1;
+}
+@media screen and (max-width: 768px) {
+  .p-service-maker__card {
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+.p-service-maker__card__number {
+  color: var(--Primary-500, #02629F);
+  font-family: "Yu Gothic Medium", "Yu Gothic", "YuGothic", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.p-service-maker__card__title {
+  color: var(--Primary-500, #02629F);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+}
+@media screen and (max-width: 768px) {
+  .p-service-maker__card__title {
+    font-size: 24px;
+  }
+}
+.p-service-maker__card__img {
+  margin-top: 16px;
+}
+.p-service-maker__card__text {
+  margin-top: 16px;
+}
+.p-service-handling {
+  padding: 80px 170px;
+  background-color: #fafafa;
+}
+@media screen and (max-width: 768px) {
+  .p-service-handling {
+    padding: 80px 24px;
+  }
+}
+.p-service-handling__list {
+  padding-top: 48px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.p-service-handling__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #BFBFBF;
+  width: 233px;
+  padding: 32px 0;
+}
+@media screen and (max-width: 768px) {
+  .p-service-handling__item {
+    padding: 32px 16px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-service-handling__item:last-child {
+    width: 100%;
   }
 }
 
