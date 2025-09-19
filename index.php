@@ -36,22 +36,31 @@
 <body>
   <div class="wrapper">
     <!--======== l-header ========-->
-    <?php require_once 'header.php'; ?>
+    <?php require_once 'header-black.php'; ?>
 
     <!--======== l-main ========-->
     <main class="l-main">
       <!-- Hero Section -->
       <section class="hero">
-        <img src="assets/images/bg_mv.png" alt="" class="hero-bg" />
+        <picture>
+          <!-- モバイル（〜767px）で表示する画像 -->
+          <source srcset="assets/images/bg_mv_sp.png" media="(max-width: 768px)">
+          <!-- タブレット以上で表示する画像 -->
+          <source srcset="assets/images/bg_mv.png" media="(min-width: 769px)">
+          <!-- フォールバック（必須！） -->
+          <img src="assets/images/bg_mv.png" alt="" class="hero-bg" />
+        </picture>
         <div class="hero-content">
           <div class="hero-content-inner">
             <h1 class="hero-title">
-            <span>Lighting the Future,</span>
-            <span>Together with You.</span>
+            <span>Lighting<br class="u-sp-only"> the Future,</span>
+            <span>Together with<br class="u-sp-only"> You.</span>
           </h1>
-          <p class="hero-subtitle">未来を照らすエネルギーを、あなたと共に</p>
-          <a href="#contact" class="btn-primary">お問い合わせ</a>
+          <p class="hero-subtitle">未来を照らすエネルギーを、<br>あなたと共に</p>
           </div>
+        </div>
+        <div class="hero-contact-btn-inner">
+          <a href="contact.php" class="hero-contact-btn btn-primary">お問い合わせ</a>
         </div>
       </section>
 

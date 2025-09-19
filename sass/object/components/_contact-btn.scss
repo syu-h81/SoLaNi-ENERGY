@@ -12,4 +12,14 @@
   line-height: 1.5;
   letter-spacing: 0.16px;
   transition: all 0.3s ease;
+  &-black {
+    background: #fff;
+    border: 1px solid #023652;
+    color: #024C79;
+  }
+  &-contact {
+    background: transparent;
+    border: 1px solid #023652;
+    color: #024C79;
+  }
 }

@@ -128,9 +128,7 @@
     height: 372px;
     background: rgba(159, 191, 255, 0.20);
     @include g.mq(md) {
-      position: absolute;
-      top: 80px;
-      left: 40%;
+      display: none;
     }
   }
 

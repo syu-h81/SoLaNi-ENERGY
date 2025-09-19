@@ -34,7 +34,7 @@
 <body>
   <div class="wrapper">
     <!--======== l-header ========-->
-    <?php require_once 'header.php'; ?>
+    <?php require_once 'header-contact.php'; ?>
     <main class="l-main p-contact-main">
       <section class="p-contact l-section">
         <div class="p-contact__inner l-inner">

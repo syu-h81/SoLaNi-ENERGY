@@ -425,22 +425,20 @@ img {
   position: relative;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .hero-bg {
   width: 100%;
-  height: auto; /* アスペクト比を保持 */
+  height: 697px; /* アスペクト比を保持 */
   display: block;
 }
 
 .hero-content {
   position: absolute;
-  position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: justify;
   color: white;
   max-width: 1040px;
 }
@@ -451,6 +449,12 @@ img {
   font-weight: 300;
   line-height: normal;
   margin: 0 0 24px 0;
+  font-style: normal;
+  font-weight: 700;
+  background: var(--Foreground-Gradient-PrimaryBrand, linear-gradient(271deg, var(--Primary-700, #024C79) 0.81%, var(--Primary-300, #3387C7) 99.05%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-title span {
@@ -458,11 +462,16 @@ img {
 }
 
 .hero-subtitle {
-  font-family: "Noto Sans CJK JP", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
   line-height: normal;
   margin: 0 0 24px 0;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--Foreground-Gradient-PrimaryBrand, linear-gradient(271deg, var(--Primary-700, #024C79) 0.81%, var(--Primary-300, #3387C7) 99.05%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-primary {
@@ -482,6 +491,30 @@ img {
 .btn-primary:hover {
   background: white;
   color: #0a0f30;
+}
+
+.hero-contact-btn-inner {
+  background: linear-gradient(201deg, var(--Primary-700, #024C79) 42.48%, var(--Primary-500, #02629F) 91.87%);
+  display: flex;
+  padding: 24px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.hero-contact-btn {
+  display: flex;
+  width: 291px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid var(--Border-Gradient-PrimaryBrand2, #023652);
+  background: var(--Gray-Scale-0, #FFF);
+  color: #024C79;
 }
 
 /* ============================================
@@ -940,14 +973,17 @@ img {
 
   .hero-content {
     width: 100%;
-    padding: 0;
+    padding: 0 24px;
+    top: 13%;
+    left: 0;
+    transform: none;
   }
   
   .hero-bg {
     height: 800px;
   }
   .hero-title {
-    font-size: 32px;
+    font-size: 40px;
   }
   
   .hero-subtitle {
