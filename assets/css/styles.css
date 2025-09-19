@@ -1332,6 +1332,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1040px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .p-service-explain__content {
@@ -1434,16 +1436,22 @@ img {
 }
 .p-service-reason__cards {
   padding-top: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .p-service-reason__card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   padding-top: 24px;
 }
 .p-service-reason__card:first-child {
   padding-top: 0;
 }
+.p-service-reason__card__img {
+  width: 100%;
+}
 .p-service-reason__card__body {
+  width: 100%;
   border-radius: 0 16px 16px 0;
   background: #FFF;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
