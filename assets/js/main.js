@@ -27,7 +27,7 @@ $(document).ready(function() {
   // Add animation classes when elements come into view
   const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px -150px 0px'
   };
 
   const observer = new IntersectionObserver(function(entries) {
@@ -52,5 +52,15 @@ $(document).ready(function() {
         scrollTop: $('#contact').offset().top - 80
       }, 800);
     }
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  // ページロード後に .smooth にクラス付与
+  document.querySelectorAll('.smooth').forEach((el, index) => {
+    // 順番に遅延をつけて表示させたい場合
+    setTimeout(() => {
+      el.classList.add('is-animated');
+    }, index * 700); // 0.4秒ずつ遅延
   });
 });

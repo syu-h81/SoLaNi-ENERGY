@@ -53,9 +53,9 @@
         <div class="hero-content">
           <div class="hero-content-inner">
             <h1 class="hero-title">
-            <span>Lighting<br class="u-sp-only"> the Future,</span>
-            <span>Together with<br class="u-sp-only"> You.</span>
-          </h1>
+              <span class="smooth anim">Lighting<br class="u-sp-only"> the Future,</span>
+              <span class="smooth anim">Together with<br class="u-sp-only"> You.</span>
+            </h1>
           <p class="hero-subtitle">未来を照らすエネルギーを、<br>あなたと共に</p>
           </div>
         </div>
@@ -175,7 +175,7 @@
         </div>
         <div class="cta-content">
           <div class="cta-contact-inner">
-            <h2 class="cta-title">持続可能な<br class="sp-only">社会のために</h2>
+            <h2 class="cta-title">持続可能な<br class="u-sp-only">社会のために</h2>
             <p class="cta-description">
               私たちは、太陽光発電を通じてCO₂削減や自然との共生を目指しています。<br>
               エネルギーの自給自足を支援し、環境負荷を軽減することで、未来の子どもたちに美しい地球を残していきます。
