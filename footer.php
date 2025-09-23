@@ -34,11 +34,7 @@
                 <span>OUR</span>
                 <span>CONTACT</span>
               </h3>
-              <div class="l-footer__contact__icon">
-                <svg width="61" height="60" viewBox="0 0 61 60" fill="none">
-                  <path d="M30.5 0L38.125 15L53.5 15L41.1875 24.25L48.8125 39.25L30.5 30L12.1875 39.25L19.8125 24.25L7.5 15L22.875 15L30.5 0Z" fill="#024c79"/>
-                </svg>
-              </div>
+              <a href="contact.php" class="l-footer__contact__icon"></a>
             </div>
             <div class="l-footer__contact__info">
               <div class="l-footer__contact-icon-small">
@@ -47,10 +43,10 @@
               <span class="l-footer__contact__text">お問い合わせ</span>
             </div>
           </div>
+          <a href="#" class="back-to-top">
+            <span class="back-to-top-arrow"></span>
+            <span class="back-to-top-text">TOP</span>
+          </a>
         </div>
-        <a href="#" class="back-to-top">
-          <span class="back-to-top-arrow"></span>
-          <span class="back-to-top-text">TOP</span>
-        </a>
       </div>
     </footer>

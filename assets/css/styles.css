@@ -573,6 +573,7 @@ img {
   gap: 30px;
   align-items: center;
   margin-bottom: 48px;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .l-footer__main {
@@ -690,6 +691,7 @@ img {
 @media screen and (max-width: 768px) {
   .l-footer__contact-header {
     margin-top: 18px;
+    display: block;
   }
 }
 .l-footer__contact-title {
@@ -709,8 +711,38 @@ img {
   display: block;
 }
 .l-footer__contact__icon {
-  width: 61px;
+  width: 60px;
   height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__contact__icon {
+    width: 34px;
+    height: 34px;
+    margin-left: auto;
+  }
+}
+.l-footer__contact__icon::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  border-top: 2px solid #024C79;
+  border-right: 2px solid #024C79;
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 768px) {
+  .l-footer__contact__icon::after {
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #024C79;
+    border-right: 1px solid #024C79;
+  }
 }
 .l-footer__contact__info {
   display: flex;
@@ -730,7 +762,7 @@ img {
 }
 .l-footer .back-to-top {
   position: absolute;
-  top: 257px;
+  top: -10px;
   right: 0;
   width: 61px;
   height: 60px;
@@ -1865,4 +1897,4 @@ img {
 
 .u-text-primary {
   color: #252525 !important;
-}
+}/*# sourceMappingURL=styles.css.map */
