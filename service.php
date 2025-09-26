@@ -197,60 +197,117 @@
           </div>
           <ul class="p-service-handling__list">
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__tyoshu">
+                <img src="assets/images/tyosyu_logo.png" alt="">
+              </div>
               <p>長州産業</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__sharp">
+                <img src="assets/images/sharp_logo.png" alt="">
+              </div>
               <p>シャープ</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__panasonic">
+                <img src="assets/images/panasonic_logo.png" alt="">
+              </div>
               <p>パナソニック</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__canadian">
+                <img src="assets/images/canadian_logo.png" alt="">
+              </div>
               <p>カナディアン・<br class="u-sp-only">ソーラー</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__nextEnegy">
+                <img src="assets/images/nextenegy_logo.png" alt="">
+              </div>
               <p>ネクストエナジー</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__huawei">
+                <img src="assets/images/huawei_logo.png" alt="">
+              </div>
               <p>ファーウェイ</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__mitshubishi">
+                <img src="assets/images/mitsubishi_logo.png" alt="">
+              </div>
               <p>三菱</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__kyocera">
+                <img src="assets/images/kyocera_logo.png" alt="">
+              </div>
               <p>京セラ</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__qcells">
+                <img src="assets/images/qcells_logo.png" alt="">
+              </div>
               <p>ハンファQセルズ</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__toyota">
+                <img src="assets/images/toyota_logo.png" alt="">
+              </div>
               <p>トヨタ</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__denso">
+                <img src="assets/images/denso_logo.png" alt="">
+              </div>
               <p>デンソー</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__nichikon">
+                <img src="assets/images/nichikon_logo.png" alt="">
+              </div>
               <p>ニチコン</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__omron">
+                <img src="assets/images/omron_logo.png" alt="">
+              </div>
               <p>オムロン</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__looop">
+                <img src="assets/images/looop_logo.png" alt="">
+              </div>
               <p>Looop</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__kyocera">
+                <img src="assets/images/kyocera_logo.png" alt="">
+              </div>
               <p>京セラ</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__hitachi">
+                <img src="assets/images/hitachi_logo.png" alt="">
+              </div>
               <p>日立</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__mitsubishi">
+                <img src="assets/images/mitsubishi_logo.png" alt="">
+              </div>
               <p>三菱</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__lixil">
+                <img src="assets/images/lixil_logo.png" alt="">
+              </div>
               <p>リクシル</p>
             </li>
             <li class="p-service-handling__item">
+              <div class="p-service-handling__item__logo p-service-handling__item__logo__takaraStandard">
+                <img src="assets/images/takarastandard_logo.png" alt="">
+              </div>
               <p>タカラスタンダード　他</p>
             </li>
           </ul>
