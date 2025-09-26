@@ -296,18 +296,26 @@
     }
     &__item {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 8px;
       border: 0.5px solid #BFBFBF;
       width: 233px;
       padding: 32px 0;
       @include g.mq(md) {
-        padding: 32px 16px;
+        padding: 16px;
         width: 50%;
       }
       &:last-child {
         @include g.mq(md) {
           width: 100%;
+        }
+      }
+      &__logo {
+        width: 80px;
+        @include g.mq(md) {
+          width: 60px;
         }
       }
     }

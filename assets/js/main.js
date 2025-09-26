@@ -16,11 +16,14 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     const scrollTop = $(window).scrollTop();
     const header = $('.l-header');
+    const logo = $('.l-header__logo img');
     
     if (scrollTop > 100) {
       header.addClass('scrolled');
+      logo.attr('src', 'assets/images/Solanilogo_White.png');
     } else {
       header.removeClass('scrolled');
+      logo.attr('src', 'assets/images/header_logo.png');
     }
   });
 

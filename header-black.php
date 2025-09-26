@@ -1,7 +1,9 @@
 <!--======== l-header ========-->
     <header class="l-header">
       <div class="l-header__inner">
-        <a href="index.php" class="l-header__logo l-header__logo__black">LOGO</a>
+        <a href="index.php" class="l-header__logo l-header__logo__black">
+          <img src="assets/images/header_logo.png" alt="">
+        </a>
         <nav class="l-header__nav">
           <ul class="l-header__list">
             <li class="l-header__item l-header__item__black"><a href="about.php">SoLaNi ENERGYについて</a></li>

@@ -25,7 +25,9 @@
                 <a href="#terms">特定商取引法に基づく表記</a>
               </div>
             </div>
-            <a href="index.php" class="l-footer__logo l-footer__nav__logo">LOGO</a>
+            <a href="index.php" class="l-footer__nav__logo">
+              <img src="assets/images/header_logo.png" alt="">
+            </a>
           </div>
           <div class="l-footer__divider"></div>
           <div class="l-footer__contact">

@@ -28,12 +28,6 @@
     @include g.mq(md) {
       display: none;
     }
-    &.l-footer__nav__logo {
-      // フッター内下部のロゴ（必要なら調整）
-      color: #fff;
-      font-size: 105.75px;
-      margin-bottom: 48px;
-    }
   }
 
   &__main {
@@ -91,11 +85,10 @@
       letter-spacing: 0.12px;
     }
     &__logo {
-      text-align: justify;
+      display: block;
+      width: 100px;
       margin-top: 24px;
       @include g.mq(md) {
-        display: block;
-        font-size: 41px!important;
         margin: 0;
         margin-bottom: 24px!important;
       }
